@@ -1,10 +1,10 @@
 RewriteEngine On
 RewriteBase /
 
-#Redirect 301
-#RewriteCond %{REQUEST_FILENAME} robots.txt$ [NC]
-#RewriteRule ^([^/]+) $1 [L]
-#RewriteCond %{HTTP_HOST} ^artdentalclinic\.dp\.ua
-#RewriteRule ^(.*)$ http://dev.artdentalclinic.dp.ua/$1 [R=301,L]
-#RewriteCond %{HTTP_HOST} ^www.artdentalclinic\.dp\.ua
-#RewriteRule ^(.*)$ http://dev.artdentalclinic.dp.ua/$1 [R=301,L]
+Redirect 301
+RewriteCond %{REQUEST_FILENAME} robots.txt$ [NC]
+RewriteRule ^([^/]+) $1 [L]
+RewriteCond %{HTTP_HOST} ^artdentalclinic\.dp\.ua
+RewriteRule ^(.*)$ http://dev.artdentalclinic.dp.ua/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.artdentalclinic\.dp\.ua
+RewriteRule ^(.*)$ http://dev.artdentalclinic.dp.ua/$1 [R=301,L]
