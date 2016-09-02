@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
-Redirect 301
+#Redirect 301
 RewriteCond %{REQUEST_FILENAME} robots.txt$ [NC]
 RewriteRule ^([^/]+) $1 [L]
 RewriteCond %{HTTP_HOST} ^artdentalclinic\.dp\.ua
